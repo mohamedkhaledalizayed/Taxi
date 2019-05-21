@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/new_order_item_bg"
+        android:id="@+id/item_layout"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/user_photo"
+                android:src="@drawable/mohamed"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/user_photo"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Restaurant Name"
+                android:textStyle="bold"
+                android:id="@+id/user_name"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/user_photo"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Today at 12:33 AM"
+                android:textSize="@dimen/_8ssp"
+                android:layout_below="@+id/user_name"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order id:348"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10ssp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/order_id"
+                android:layout_below="@+id/total"
+                />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address : 365 Tottenham Court Road, W1 4DR"
+            android:textSize="@dimen/_10ssp"
+            android:maxLines="2"
+            android:textAlignment="center"
+            android:padding="@dimen/_5sdp"
+            android:ellipsize="end"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_call_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:id="@+id/call"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_black_24dp"
+                android:id="@+id/accept"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_alignParentStart="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cancel_black_24dp"
+                android:id="@+id/cancel"
+                android:layout_toEndOf="@+id/accept"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

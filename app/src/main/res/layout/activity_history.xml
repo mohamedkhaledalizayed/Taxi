@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".view.activities.HistoryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/_46sdp"
+            android:textColor="@color/colorAccent"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:id="@+id/decr_date"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/date"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                />
+
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_keyboard_arrow_right_black"
+                android:id="@+id/incr_date"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="@dimen/_16sdp"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/verify_code_bg"
+            android:layout_marginEnd="@dimen/_8sdp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_directions_car_black_24dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/icon"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Jobs"
+                    android:id="@+id/total"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="#ccc"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/earned_bgcolor"
+            android:layout_marginStart="@dimen/_8sdp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_monetization_on_black"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/icon1"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/icon1"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Earned"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="#ccc"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$325.00"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/history_recycler"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        />
+
+</LinearLayout>
+</layout>

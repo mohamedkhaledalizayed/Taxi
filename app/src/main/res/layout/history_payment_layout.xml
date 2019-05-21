@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_bg"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/mohamed"
+            android:layout_alignParentStart="true"
+            android:id="@+id/deal_photo"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/deal_photo"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elva Barnett"
+                android:textColor="#000"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10ssp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="740136"
+                android:textColor="#ccc"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/_10ssp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$25.00"
+            android:textColor="#000"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10ssp"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4DCCCCCC"
+            android:layout_below="@id/deal_photo"
+            android:layout_marginTop="@dimen/_10sdp"
+            ></LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

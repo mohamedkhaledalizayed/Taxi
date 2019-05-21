@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activities.DocumentManagementActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@drawable/verify_code_bg"
+        android:text="Identification Cards"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textColor="#1F2634"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@drawable/verify_code_bg"
+        android:text="Driving License"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textColor="#1F2634"
+        android:onClick="drivingLicense"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+
+</LinearLayout>
